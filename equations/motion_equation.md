@@ -89,7 +89,7 @@ $$
   \frac{\partial e}{\partial \theta_y} = -1\\
   \dots\\
   \frac{\partial \ddot \theta}{\partial c} = \frac{-\dot \theta}{m\alpha^2 +I}\\
-  \frac{\partial \theta_y}{\partial c} = \frac{h}{3}\left(\frac{-\dot \theta}{m\alpha^2 +I} + \frac{- \dot \theta - \frac{-\dot \theta}{m\alpha^2 +I}}{m\alpha^2 +I} + \frac{-\dot \theta - \frac{- \dot \theta - \frac{-\dot \theta}{m\alpha^2 +I}}{m\alpha^2 +I}}{m\alpha^2 +I}\right) \\
+  \frac{\partial \theta_y}{\partial c} = \frac{h^2}{2}\left(\frac{-\dot \theta}{m\alpha^2 +I} + \frac{- \dot \theta - \frac{-\dot \theta}{m\alpha^2 +I}}{m\alpha^2 +I} + \frac{-\dot \theta - \frac{- \dot \theta - \frac{-\dot \theta}{m\alpha^2 +I}}{m\alpha^2 +I}}{m\alpha^2 +I}\right) \\
   \frac{\partial J}{\partial c} = \frac{\partial J}{\partial e}\frac{\partial e}{\partial \theta_y}\frac{\partial \theta_y}{\partial c}\\
   \dots\\
 
@@ -97,7 +97,7 @@ $$
   \frac{\partial \theta_y}{\partial k_1(k_{1rk})} = \frac{e^{-k_2(\theta-\phi_1)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial k_1(k_{2rk})} = \frac{e^{-k_2(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_1)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial k_1(k_{3rk})} = \frac{e^{-k_2(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_1)}}{m\alpha^2 + I} \\
-  \frac{\partial \theta_y}{\partial k_1} = \frac{h}{3}\left(\frac{\partial \theta_y}{\partial k_1(k_{1rk})}+\frac{\partial \theta_y}{\partial k_1(k_{2rk})}+\frac{\partial \theta_y}{\partial k_1(k_{3rk})}\right)\\
+  \frac{\partial \theta_y}{\partial k_1} = \frac{h^2}{6}\left(\frac{\partial \theta_y}{\partial k_1(k_{1rk})}+\frac{\partial \theta_y}{\partial k_1(k_{2rk})}+\frac{\partial \theta_y}{\partial k_1(k_{3rk})}\right)\\
   \frac{\partial J}{\partial k_1} = \frac{\partial J}{\partial e}\frac{\partial e}{\partial \theta_y}\frac{\partial \theta_y}{\partial k_1}\\
   \dots\\
 
@@ -105,7 +105,7 @@ $$
   \frac{\partial \theta_y}{\partial k_2(k_{1rk})} = \frac{k_1 (\phi_1-\theta) e^{-k_2(\theta-\phi_1)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial k_2(k_{2rk})} = \frac{k_1 (\phi_1-\left(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)\right)) e^{-k_2(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_1)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial k_2(k_{3rk})} = \frac{k_1 (\phi_1-\left(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)\right)) e^{-k_2(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_1)}}{m\alpha^2 + I} \\
-  \frac{\partial \theta_y}{\partial k_2} = \frac{h}{3}\left(\frac{\partial \theta_y}{\partial k_2(k_{1rk})}+\frac{\partial \theta_y}{\partial k_2(k_{2rk})}+\frac{\partial \theta_y}{\partial k_2(k_{3rk})}\right)\\
+  \frac{\partial \theta_y}{\partial k_2} = \frac{h^2}{6}\left(\frac{\partial \theta_y}{\partial k_2(k_{1rk})}+\frac{\partial \theta_y}{\partial k_2(k_{2rk})}+\frac{\partial \theta_y}{\partial k_2(k_{3rk})}\right)\\
   \frac{\partial J}{\partial k_2} = \frac{\partial J}{\partial e}\frac{\partial e}{\partial \theta_y}\frac{\partial \theta_y}{\partial k_2}\\
   \dots\\
 
@@ -113,7 +113,7 @@ $$
   \frac{\partial \theta_y}{\partial k_3(k_{1rk})} = \frac{e^{-k_4(\theta-\phi_2)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial k_3(k_{2rk})} = \frac{e^{-k_4(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_2)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial k_3(k_{3rk})} = \frac{e^{-k_4(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_2)}}{m\alpha^2 + I} \\
-  \frac{\partial \theta_y}{\partial k_3} = \frac{h}{3}\left(\frac{\partial \theta_y}{\partial k_3(k_{1rk})}+\frac{\partial \theta_y}{\partial k_3(k_{2rk})}+\frac{\partial \theta_y}{\partial k_3(k_{3rk})}\right)\\
+  \frac{\partial \theta_y}{\partial k_3} = \frac{h^2}{6}\left(\frac{\partial \theta_y}{\partial k_3(k_{1rk})}+\frac{\partial \theta_y}{\partial k_3(k_{2rk})}+\frac{\partial \theta_y}{\partial k_3(k_{3rk})}\right)\\
   \frac{\partial J}{\partial k_3} = \frac{\partial J}{\partial e}\frac{\partial e}{\partial \theta_y}\frac{\partial \theta_y}{\partial k_3}\\
   \dots\\
 
@@ -121,7 +121,7 @@ $$
   \frac{\partial \theta_y}{\partial k_4(k_{1rk})} = \frac{k_3 (\phi_2-\theta) e^{-k_4(\theta-\phi_2)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial k_4(k_{2rk})} = \frac{k_3 (\phi_2-\left(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)\right)) e^{-k_4(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_2)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial k_4(k_{3rk})} = \frac{k_3 (\phi_2-\left(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)\right)) e^{-k_4(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_2)}}{m\alpha^2 + I} \\
-  \frac{\partial \theta_y}{\partial k_4} = \frac{h}{3}\left(\frac{\partial \theta_y}{\partial k_4(k_{1rk})}+\frac{\partial \theta_y}{\partial k_4(k_{2rk})}+\frac{\partial \theta_y}{\partial k_4(k_{3rk})}\right)\\
+  \frac{\partial \theta_y}{\partial k_4} = \frac{h^2}{6}\left(\frac{\partial \theta_y}{\partial k_4(k_{1rk})}+\frac{\partial \theta_y}{\partial k_4(k_{2rk})}+\frac{\partial \theta_y}{\partial k_4(k_{3rk})}\right)\\
   \frac{\partial J}{\partial k_4} = \frac{\partial J}{\partial e}\frac{\partial e}{\partial \theta_y}\frac{\partial \theta_y}{\partial k_4}\\
   \dots\\
 
@@ -129,7 +129,7 @@ $$
   \frac{\partial \theta_y}{\partial \phi_1(k_{1rk})} = \frac{k_1 k_2 e^{-k_2(\theta-\phi_1)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial \phi_1(k_{2rk})} = \frac{k_1 k_2 e^{-k_4(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_2)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial \phi_1(k_{3rk})} = \frac{k_1 k_2 e^{-k_4(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_2)}}{m\alpha^2 + I} \\
-  \frac{\partial \theta_y}{\partial \phi_1} = \frac{h}{3}\left(\frac{\partial \theta_y}{\partial \phi_1(k_{1rk})}+\frac{\partial \theta_y}{\partial \phi_1(k_{2rk})}+\frac{\partial \theta_y}{\partial \phi_1(k_{3rk})}\right)\\
+  \frac{\partial \theta_y}{\partial \phi_1} = \frac{h^2}{6}\left(\frac{\partial \theta_y}{\partial \phi_1(k_{1rk})}+\frac{\partial \theta_y}{\partial \phi_1(k_{2rk})}+\frac{\partial \theta_y}{\partial \phi_1(k_{3rk})}\right)\\
   \frac{\partial J}{\partial \phi_1} = \frac{\partial J}{\partial e}\frac{\partial e}{\partial \theta_y}\frac{\partial \theta_y}{\partial \phi_1}\\
   \dots\\
 
@@ -137,7 +137,7 @@ $$
   \frac{\partial \theta_y}{\partial \phi_2(k_{1rk})} = \frac{k_3 k_4 e^{-k_4(\theta-\phi_2)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial \phi_2(k_{2rk})} = \frac{k_3 k_4 e^{-k_4(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_2)}}{m\alpha^2 + I} \\
   \frac{\partial \theta_y}{\partial \phi_2(k_{3rk})} = \frac{k_3 k_4 e^{-k_4(\theta+\frac{h}{2}\left(\dot{\theta}+\frac{\frac{\partial \theta_y}{\partial k_{1rk}}}{2}\right)-\phi_2)}}{m\alpha^2 + I} \\
-  \frac{\partial \theta_y}{\partial \phi_2} = \frac{h}{3}\left(\frac{\partial \theta_y}{\partial \phi_2(k_{1rk})}+\frac{\partial \theta_y}{\partial \phi_2(k_{2rk})}+\frac{\partial \theta_y}{\partial \phi_2(k_{3rk})}\right)\\
+  \frac{\partial \theta_y}{\partial \phi_2} = \frac{h^2}{6}\left(\frac{\partial \theta_y}{\partial \phi_2(k_{1rk})}+\frac{\partial \theta_y}{\partial \phi_2(k_{2rk})}+\frac{\partial \theta_y}{\partial \phi_2(k_{3rk})}\right)\\
   \frac{\partial J}{\partial \phi_2} = \frac{\partial J}{\partial e}\frac{\partial e}{\partial \theta_y}\frac{\partial \theta_y}{\partial \phi_2}\\
   \dots\\
 
